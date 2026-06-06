@@ -1,6 +1,6 @@
 # Loon 策略组增强模板
 
-![Loon 策略组增强模板](assets/loon-strategy-suite-cover.png)
+![Loon 策略组增强模板](assets/loon-strategy-suite-cover.svg)
 
 一套偏日常使用的 Loon 策略组模板，覆盖 AI、流媒体、社交、开发、支付和常见地区节点分组。
 

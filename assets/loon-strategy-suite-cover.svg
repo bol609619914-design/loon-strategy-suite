@@ -1,0 +1,49 @@
+<svg width="1000" height="460" viewBox="0 0 1000 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Loon Strategy Suite cover</title>
+  <desc id="desc">A restrained terminal-style card for a Loon strategy configuration project.</desc>
+  <defs>
+    <filter id="shadow" x="0" y="0" width="1000" height="460" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#161922" flood-opacity="0.18"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#161922" flood-opacity="0.18"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.035"/>
+      </feComponentTransfer>
+    </filter>
+    <linearGradient id="paper" x1="0" x2="1000" y1="0" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#edf3ee"/>
+      <stop offset="0.55" stop-color="#f7f7f2"/>
+      <stop offset="1" stop-color="#e8eee9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="460" fill="url(#paper)"/>
+  <rect width="1000" height="460" filter="url(#grain)" opacity="0.55"/>
+
+  <g filter="url(#shadow)">
+    <rect x="42" y="28" width="906" height="376" rx="22" fill="#242633"/>
+    <rect x="42.75" y="28.75" width="904.5" height="374.5" rx="21.25" stroke="#414553" stroke-width="1.5"/>
+  </g>
+
+  <g font-family="SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="100" y="105" fill="#28df72" font-size="28" font-weight="700" letter-spacing="0.5">LOON STRATEGY</text>
+
+    <text x="100" y="162" fill="#d9dee7" font-size="31" font-weight="500">[policy]</text>
+
+    <text x="100" y="222" fill="#fff3cf" font-size="31" font-weight="600">OpenAI, YouTube, Telegram</text>
+
+    <text x="100" y="282" fill="#d9dee7" font-size="31" font-weight="500">EU, US, SG, JP, HK</text>
+
+    <text x="100" y="342" fill="#d9dee7" font-size="31" font-weight="500">FINAL, Available</text>
+  </g>
+
+  <g opacity="0.7">
+    <rect x="742" y="89" width="126" height="10" rx="5" fill="#343747"/>
+    <rect x="742" y="113" width="82" height="10" rx="5" fill="#343747"/>
+    <circle cx="886" cy="94" r="5" fill="#28df72"/>
+    <circle cx="906" cy="94" r="5" fill="#5b6070"/>
+  </g>
+</svg>
