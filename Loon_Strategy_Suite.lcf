@@ -44,7 +44,7 @@ SG = select,SG_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/m
 JP = select,JP_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
 KR = select,KR_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
 US = select,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
-EU = select,EU_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png
+EU = select,EU_Filter,DIRECT,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png
 
 [Remote Filter]
 ALL_Filter = NameRegex, FilterKey = ".*"
