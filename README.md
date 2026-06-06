@@ -1,5 +1,7 @@
 # Loon 策略组增强模板
 
+![Loon 策略组增强模板](assets/loon-strategy-suite-cover.png)
+
 一套偏日常使用的 Loon 策略组模板，覆盖 AI、流媒体、社交、开发、支付和常见地区节点分组。
 
 [![一键导入 Loon](https://img.shields.io/badge/Loon-一键导入-1677ff?style=for-the-badge)](loon://import?config=https%3A%2F%2Fraw.githubusercontent.com%2Fbol609619914-design%2Floon-strategy-suite%2Fmain%2FLoon_Strategy_Suite.lcf)
