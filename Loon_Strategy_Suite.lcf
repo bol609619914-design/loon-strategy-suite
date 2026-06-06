@@ -22,28 +22,29 @@ interface-mode = auto
 
 [Proxy Group]
 Available = select,ALL_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png
-YouTube = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
-Telegram = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+YouTube = select,Available,US,SG,JP,HK,TW,EU,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+Telegram = select,Available,US,SG,JP,HK,TW,EU,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
 Douyin = select,DIRECT,Available,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
 Bilibili = select,DIRECT,TW,HK,Available,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png
-OpenAI = select,Available,US,SG,JP,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png
-Google = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google.png
-Apple = select,DIRECT,Available,US,HK,TW,JP,SG,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
-Emby = select,Available,US,SG,JP,HK,TW,DIRECT,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png
-Netflix = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
-Disney = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png
-Spotify = select,Available,US,SG,JP,HK,TW,DIRECT,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
-TikTok = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
-Social = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
-GitHub = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
-Microsoft = select,DIRECT,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
-PayPal = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PayPal.png
+OpenAI = select,Available,US,SG,JP,EU,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png
+Google = select,Available,US,SG,JP,HK,TW,EU,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google.png
+Apple = select,DIRECT,Available,US,HK,TW,JP,SG,EU,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
+Emby = select,Available,US,SG,JP,HK,TW,EU,DIRECT,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png
+Netflix = select,Available,US,SG,JP,HK,TW,EU,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
+Disney = select,Available,US,SG,JP,HK,TW,EU,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png
+Spotify = select,Available,US,SG,JP,HK,TW,EU,DIRECT,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+TikTok = select,Available,US,SG,JP,HK,TW,EU,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
+Social = select,Available,US,SG,JP,HK,TW,EU,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
+GitHub = select,Available,US,SG,JP,HK,TW,EU,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
+Microsoft = select,DIRECT,Available,US,SG,JP,HK,TW,EU,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
+PayPal = select,Available,US,SG,JP,HK,TW,EU,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PayPal.png
 HK = fallback,HK_Filter,interval = 600,max-timeout = 3000,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
 TW = select,TW_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
 SG = select,SG_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
 JP = select,JP_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
 KR = select,KR_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
 US = select,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+EU = select,EU_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png
 
 [Remote Filter]
 ALL_Filter = NameRegex, FilterKey = ".*"
@@ -53,6 +54,7 @@ JP_Filter = NameRegex, FilterKey = "(?i)(日本|东京|大阪|JP|Japan)"
 KR_Filter = NameRegex, FilterKey = "(?i)(KR|Korea|KOR|首尔|韩|韓)"
 US_Filter = NameRegex, FilterKey = "(?i)(美|洛杉矶|圣何塞|西雅图|US|United States)"
 SG_Filter = NameRegex, FilterKey = "(?i)(新加坡|坡|狮城|SG|Singapore)"
+EU_Filter = NameRegex, FilterKey = "(?i)(欧洲|欧盟|EU|Europe|德国|德|法兰克福|英国|英|伦敦|法国|法|巴黎|荷兰|荷|阿姆斯特丹|瑞士|意大利|米兰|西班牙|马德里|葡萄牙|瑞典|芬兰|挪威|丹麦|波兰|爱尔兰)"
 
 [Rule]
 FINAL,Available

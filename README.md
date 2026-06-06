@@ -24,7 +24,7 @@
 - 国内常用：抖音、哔哩哔哩、Apple
 - 开发和办公：GitHub、Microsoft
 - 支付：PayPal
-- 地区组：HK、TW、SG、JP、KR、US
+- 地区组：HK、TW、SG、JP、KR、US、EU
 
 ## 文件
 
@@ -48,4 +48,3 @@ https://raw.githubusercontent.com/bol609619914-design/loon-strategy-suite/main/L
 - 这个模板故意留空了 `[Remote Proxy]`，需要自己添加订阅。
 - YouTube 官方 App 去广告无法保证百分百生效，规则和插件只能尽量拦截。
 - 如果使用 MITM 类插件，需要在设备上安装并完全信任自己的 Loon CA 证书。
-
