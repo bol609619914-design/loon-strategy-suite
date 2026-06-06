@@ -1,0 +1,6 @@
+.DS_Store
+*.local.lcf
+*.private.lcf
+*.bak
+secrets/
+

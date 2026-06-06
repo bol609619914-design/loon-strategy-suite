@@ -1,0 +1,90 @@
+# Loon Strategy Suite
+# Public sanitized template.
+# Add your own subscriptions in [Remote Proxy].
+
+[General]
+ip-mode = v4-only
+skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local
+bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.168.0.0/16
+dns-server = system,119.29.29.29,114.114.114.114,223.5.5.5
+proxy-test-url = http://bing.com/generate_204
+internet-test-url = http://wifi.vivo.com.cn/generate_204
+test-timeout = 3
+interface-mode = auto
+
+[Proxy]
+
+[Remote Proxy]
+# Example:
+# MySub = https://example.com/your-subscription-url,udp=true,block-quic=true,fast-open=default,enabled=true
+
+[Proxy Chain]
+
+[Proxy Group]
+Available = select,ALL_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png
+YouTube = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+Telegram = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+Douyin = select,DIRECT,Available,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
+Bilibili = select,DIRECT,TW,HK,Available,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png
+OpenAI = select,Available,US,SG,JP,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png
+Google = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google.png
+Apple = select,DIRECT,Available,US,HK,TW,JP,SG,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
+Emby = select,Available,US,SG,JP,HK,TW,DIRECT,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png
+Netflix = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
+Disney = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png
+Spotify = select,Available,US,SG,JP,HK,TW,DIRECT,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+TikTok = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
+Social = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
+GitHub = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
+Microsoft = select,DIRECT,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
+PayPal = select,Available,US,SG,JP,HK,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PayPal.png
+HK = fallback,HK_Filter,interval = 600,max-timeout = 3000,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+TW = select,TW_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
+SG = select,SG_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+JP = select,JP_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
+KR = select,KR_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
+US = select,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+
+[Remote Filter]
+ALL_Filter = NameRegex, FilterKey = ".*"
+HK_Filter = NameRegex, FilterKey = "(?i)(港|HK|Hong)"
+TW_Filter = NameRegex, FilterKey = "(?i)(台|TW|Tai)"
+JP_Filter = NameRegex, FilterKey = "(?i)(日本|东京|大阪|JP|Japan)"
+KR_Filter = NameRegex, FilterKey = "(?i)(KR|Korea|KOR|首尔|韩|韓)"
+US_Filter = NameRegex, FilterKey = "(?i)(美|洛杉矶|圣何塞|西雅图|US|United States)"
+SG_Filter = NameRegex, FilterKey = "(?i)(新加坡|坡|狮城|SG|Singapore)"
+
+[Rule]
+FINAL,Available
+
+[Remote Rule]
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/DouYin/DouYin.list, policy=Douyin, tag=Douyin, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/BiliBili/BiliBili.list, policy=Bilibili, tag=Bilibili, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/OpenAI/OpenAI.list, policy=OpenAI, tag=OpenAI, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Gemini/Gemini.list, policy=Google, tag=Gemini, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Apple/Apple.list, policy=Apple, tag=Apple, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Emby/Emby.list, policy=Emby, tag=Emby, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Netflix/Netflix.list, policy=Netflix, tag=Netflix, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Disney/Disney.list, policy=Disney, tag=Disney, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Spotify/Spotify.list, policy=Spotify, tag=Spotify, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/TikTok/TikTok.list, policy=TikTok, tag=TikTok, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Facebook/Facebook.list, policy=Social, tag=Facebook, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Instagram/Instagram.list, policy=Social, tag=Instagram, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Twitter/Twitter.list, policy=Social, tag=Twitter, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/GitHub/GitHub.list, policy=GitHub, tag=GitHub, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Microsoft/Microsoft.list, policy=Microsoft, tag=Microsoft, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/PayPal/PayPal.list, policy=PayPal, tag=PayPal, enabled=true
+https://raw.githubusercontent.com/Loon0x00/LoonLiteRules/main/proxy/YouTube.list, policy=YouTube, tag=YouTube, enabled=true
+https://raw.githubusercontent.com/Loon0x00/LoonLiteRules/main/proxy/Telegram.list, policy=Telegram, tag=Telegram, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Proxy/Proxy.list, policy=Available, tag=Global, enabled=true
+https://raw.githubusercontent.com/Loon0x00/LoonLiteRules/main/direct/cn.list, policy=DIRECT, tag=GEOIP_CN, enabled=true
+
+[Rewrite]
+
+[Script]
+
+[Plugin]
+
+[Mitm]
+skip-server-cert-verify = false
+hostname =
